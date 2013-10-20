@@ -1,0 +1,24 @@
+# Misc
+._*
+.~lock.*
+.DS_Store
+.idea
+*.bak
+*.swp
+*.tmp
+composer.phar
+Desktop.ini
+Thumbs.db
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.settings/
+
+# Eclipse PDT-specific
+.buildpath
+
+# Project settings

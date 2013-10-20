@@ -1,0 +1,61 @@
+#!/bin/bash
+# Author: Remigijus Jarmalavičius <remigijus@jarmalavicius.lt>
+# Author: Vytautas Povilaitis <php-checker@vytux.lt>
+
+checks[1]="var_dump("
+checks[2]="print_r("
+checks[3]="die"
+
+element_count=${#checks[@]}
+let "element_count = $element_count + 1"
+
+ROOT_DIR="$(pwd)/"
+LIST=$(git diff-index --cached --name-only --diff-filter=ACMR HEAD)
+ERRORS_BUFFER=""
+for file in $LIST
+do
+    EXTENSION=$(echo "$file" | grep ".php$")
+    if [ "$EXTENSION" != "" ]; then
+        echo -n "Processing file: $file "
+        ERRORS=$(php -l $ROOT_DIR$file 2>&1 | grep "Parse error")
+        if [ "$ERRORS" != "" ]; then
+            echo -en "\e[00;31mF\e[00m"
+            if [ "$ERRORS_BUFFER" != "" ]; then
+                ERRORS_BUFFER="$ERRORS_BUFFER\n\n$file\n \e[01;30mSyntax Error\e[00m: $ERRORS"
+            else
+                ERRORS_BUFFER="$file\n \e[01;30mSyntax Error:\e[00m $ERRORS"
+            fi
+        else
+            echo -en "\e[00;32m.\e[00m"
+        fi
+
+        index=1
+        while [ "$index" -lt "$element_count" ]
+        do
+            ERRORS=$(grep "${checks[$index]}" $ROOT_DIR$file >&1)
+            if [ "$ERRORS" != "" ]; then
+                echo -en "\e[00;31mF\e[00m"
+                if [ "$ERRORS_BUFFER" != "" ]; then
+                    ERRORS_BUFFER="$ERRORS_BUFFER\n\n$file\n \e[01;30mDebug code found\e[00m: $ERRORS"
+                else
+                    ERRORS_BUFFER="$file\n \e[01;30mDebug code found:\e[00m $ERRORS"
+                fi
+            else
+                echo -en "\e[00;32m.\e[00m"
+            fi
+            let "index = $index + 1"
+        done
+        echo
+    fi
+done
+if [ "$ERRORS_BUFFER" != "" ]; then
+    echo
+    echo -e "\e[00;31mErrors found while trying to commit!\e[00m"
+    echo
+    echo -e $ERRORS_BUFFER
+    echo
+    echo "Can't commit, fix the errors first."
+    exit 1
+else
+    echo -e "\e[00;32mNo errors found during pre-commit processing.\e[00m"
+fi
