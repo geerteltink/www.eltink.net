@@ -1,0 +1,54 @@
+
+* {
+    /* Reset browsers default margin, padding and font sizes */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    /* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
+    height: 100%;
+    margin-bottom: 1px;
+}
+
+body {
+    /* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
+    font-family: georgia, verdana, sans-serif, arial;
+    color: #000000;
+    background-color: #8b0d07;
+    font-size: 12px;
+    margin: 75px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+	color: #8b0d07;
+}
+
+.borderInside {
+	border: 1px solid #eee389;
+	background-color: #8b0d07;
+	padding: 10px;
+	text-align: center;
+}
+
+.borderOutside {
+	border: 2px solid #eee389;
+	background-color: #8b0d07;
+	padding: 5px;
+	text-align: center;
+}
+
+.history {
+	background-color: #eee389;
+	text-align: justify;
+	padding: 10px;
+	font-style: italic;
+}
+
+.famWeapon {
+	text-align: left;
+	padding: 0 10px 10px 0;
+}
