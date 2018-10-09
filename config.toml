@@ -1,0 +1,5 @@
+baseURL = "http://eltink.net/"
+title = "eltink.net"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]

@@ -1,33 +1,16 @@
-<!doctype html>
-<html lang="en">
+---
+title: "eltink.net"
+date: 2018-10-09T10:31:19+02:00
+draft: false
+---
 
-<head>
-	<meta name="generator" content="Hugo 0.49" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="http://example.org/">
-  <title>eltink.net</title>
-  
-  <link rel="stylesheet" href="http://example.org/style/main.min.604229e0fff3b326307709ddca1097fcc7423f6a19330ea7bfb3c70f90e8ebad.css" integrity="sha256-YEIp4P/zsyYwdwndyhCX/MdCP2oZMw6nv7PHD5Do660=" media="screen">
-</head>
+{{< img "img/logo.png" "Eltink family weapon" >}}
 
-<body>
-
-  <header class="app-header"></header>
-
-
-  
-<main aria-role="main">
-  
-
-<img src="/img/logo.1614e0a8477807c41923c08854520219.png" alt="Eltink family weapon" />
-
-
-<p><br />
 <br />
 <br />
 <br />
-<br /></p>
+<br />
+<br />
 
 <div class="borderOutside container">
     <div class="borderInside">
@@ -59,13 +42,3 @@
         </div>
     </div>
 </div>
-
-</main>
-
-
-  <footer class="app-footer"></footer>
-
-
-</body>
-
-</html>
