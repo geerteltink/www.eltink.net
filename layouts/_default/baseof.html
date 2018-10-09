@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -9,15 +8,10 @@
   {{ $styles := resources.Get "style/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 </head>
-
 <body>
-
   {{ block "header" . }}{{ partial "header" . }}{{end}}
-
   {{ block "main" . }}{{end}}
-
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
+  {{ template "_internal/google_analytics_async.html" . }}
 </body>
-
 </html>
