@@ -359,23 +359,24 @@ h1 {
 .container {
     max-width: 68rem;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     margin-right: auto;
     margin-left: auto;
-}
-
-.borderInside {
-	border: 1px solid #eee389;
-	background-color: #8b0d07;
-	padding: 10px;
-	text-align: center;
 }
 
 .borderOutside {
 	border: 2px solid #eee389;
 	background-color: #8b0d07;
 	padding: 5px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.borderInside {
+	border: 1px solid #eee389;
+	background-color: #8b0d07;
+	padding: 10px;
 	text-align: center;
 }
 

@@ -6,12 +6,6 @@ draft: false
 
 {{< img "img/logo.png" "Eltink family weapon" >}}
 
-<br />
-<br />
-<br />
-<br />
-<br />
-
 <div class="borderOutside container">
     <div class="borderInside">
         <div class="history">
