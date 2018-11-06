@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="web_author" content="Geert Eltink, https://www.xtreamwayz.com/">
   {{ with .GitInfo }}<meta name="revision" content="{{ .Hash }}">{{ end }}
   <meta name="dcterms.created" content="{{ .Date }}">
   <meta name="dcterms.modified" content="{{ .Lastmod }}">
+  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   {{ $styles := resources.Get "style/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 </head>
