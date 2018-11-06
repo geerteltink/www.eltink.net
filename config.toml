@@ -3,5 +3,6 @@ title = "eltink.net"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 googleAnalytics = "UA-21965585-8"
-
+enableRobotsTxt = true
+enableGitInfo = true
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
