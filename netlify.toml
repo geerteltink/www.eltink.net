@@ -1,9 +1,7 @@
+# https://www.netlify.com/docs/netlify-toml-reference/
 [build]
 publish = "public"
 command = "hugo -b $URL"
-
-[build.environment]
-HUGO_VERSION = "0.49"
 
 [context.deploy-preview]
 command = "hugo --i18n-warnings -b $DEPLOY_PRIME_URL"
