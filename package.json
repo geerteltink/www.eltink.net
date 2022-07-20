@@ -1,0 +1,46 @@
+{
+  "name": "www.eltink.net",
+  "version": "1.0.0",
+  "description": "Site is created with [Hugo](https://gohugo.io/). Served by [netlify](https://app.netlify.com/sites/eltink-net)",
+  "main": "index.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "fast-glob": "^3.2.11",
+    "html-minifier": "^4.0.0",
+    "markdownlint": "^0.26.0",
+    "markdownlint-cli": "^0.32.0",
+    "md5": "^2.3.0",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^14.1.0",
+    "prettier": "^2.7.1",
+    "striptags": "^3.2.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended": "^8.0.0"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "build-production": "NODE_ENV=production npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve --port=8091",
+    "serve-production": "NODE_ENV=production npx @11ty/eleventy --serve --port=8091",
+    "check-links": "npx check-html-links _site",
+    "lint": "npm run lint:md && npm run lint:css",
+    "lint:md": "markdownlint src/**/*.md",
+    "lint:css": "stylelint src/assets/**/*.css",
+    "format": "prettier --write '**/*.{js,css,html,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geerteltink/www.eltink.net.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geerteltink/www.eltink.net/issues"
+  },
+  "homepage": "https://github.com/geerteltink/www.eltink.net#readme"
+}
