@@ -30,8 +30,8 @@ body {
  */
 
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
+  font-size: 2em;
 }
 
 /* Grouping content
@@ -54,7 +54,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -75,9 +75,9 @@ a {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
+  border-bottom: none; /* 1 */
 }
 
 /**
@@ -97,7 +97,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -116,9 +116,9 @@ small {
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -154,10 +154,10 @@ input,
 optgroup,
 select,
 textarea {
+  margin: 0; /* 2 */
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
 }
 
 /**
@@ -199,8 +199,8 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
   padding: 0;
+  border-style: none;
 }
 
 /**
@@ -231,10 +231,10 @@ fieldset {
 
 legend {
   box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
   padding: 0; /* 3 */
+  color: inherit; /* 2 */
   white-space: normal; /* 1 */
 }
 
@@ -340,16 +340,14 @@ template {
   display: none;
 }
 
-
-
 body {
+    padding: 10px 0;
+    margin: 75px;
     /* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
     font-family: georgia, verdana, sans-serif, arial;
     color: #000000;
-    background-color: #8b0d07;
-    margin: 75px;
-    padding: 10px 0;
     text-align: center;
+    background-color: #8b0d07;
 }
 
 h1 {
@@ -357,8 +355,8 @@ h1 {
 }
 
 .container {
-    max-width: 68rem;
     width: 100%;
+    max-width: 68rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     margin-right: auto;
@@ -366,30 +364,30 @@ h1 {
 }
 
 .borderOutside {
-	border: 2px solid #eee389;
-	background-color: #8b0d07;
 	padding: 5px;
-  text-align: center;
   margin-top: 3rem;
+  text-align: center;
+	background-color: #8b0d07;
+	border: 2px solid #eee389;
 }
 
 .borderInside {
-	border: 1px solid #eee389;
-	background-color: #8b0d07;
 	padding: 10px;
 	text-align: center;
+	background-color: #8b0d07;
+	border: 1px solid #eee389;
 }
 
 .history {
-	background-color: #eee389;
-	text-align: justify;
 	padding: 1rem 2rem;
-    font-style: italic;
+  font-style: italic;
+	text-align: justify;
+	background-color: #eee389;
 }
 
 .famWeapon {
-	text-align: left;
 	padding: 0 1rem 1rem 0;
+	text-align: left;
 }
 
 .text-primary {
