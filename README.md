@@ -1,4 +1,4 @@
-# ELTINK.NET
+# www.eltink.net
 
-Site is created with [Hugo](https://gohugo.io/).
-Served by [netlify](https://app.netlify.com/sites/eltink-net)
+Site is created with [Eleventy](https://www.11ty.dev/).
+Served by [vercel](https://vercel.com/).
