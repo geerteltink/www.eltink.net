@@ -5,8 +5,6 @@ date: 2022-07-04
 eleventyExcludeFromCollections: true
 ---
 
-# Heading 1
-
 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
 
 ## Heading 2
@@ -57,7 +55,7 @@ _Note: the [Figure-Figcaption](https://html5doctor.com/the-figure-figcaption-ele
 
 ## Text Elements
 
-The [a element](#example), [external a element](https://example.com), and [a element with title](#example 'Example Title') examples
+The [external a element](https://example.com)
 
 The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples
 
