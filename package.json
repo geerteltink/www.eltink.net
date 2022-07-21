@@ -31,7 +31,8 @@
     "lint": "npm run lint:md && npm run lint:css",
     "lint:md": "markdownlint src/**/*.md",
     "lint:css": "stylelint src/assets/**/*.css",
-    "format": "prettier --write '**/*.{js,css,html,md}'"
+    "format": "prettier --write '**/*.{js,css,html,md}'",
+    "test": "npm run build && npm run lint && npm run check-links"
   },
   "repository": {
     "type": "git",
