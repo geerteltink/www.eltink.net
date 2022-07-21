@@ -1,0 +1,57 @@
+
+body {
+  padding: 10px 0;
+  margin: 75px;
+  font-family: georgia, verdana, sans-serif, arial;
+  color: #000000;
+  text-align: center;
+  background-color: #8b0d07;
+}
+
+h1 {
+  color: #8b0d07;
+}
+
+.container {
+  width: 100%;
+  max-width: 68rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.borderOutside {
+  padding: 5px;
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #8b0d07;
+  border: 2px solid #eee389;
+}
+
+.borderInside {
+  padding: 10px;
+  text-align: center;
+  background-color: #8b0d07;
+  border: 1px solid #eee389;
+}
+
+.history {
+  padding: 1rem 2rem;
+  font-style: italic;
+  text-align: justify;
+  background-color: #eee389;
+}
+
+.famWeapon {
+  padding: 0 1rem 1rem 0;
+  text-align: left;
+}
+
+.text-primary {
+  color: #eee389;
+}
+
+picture {
+  text-align: center;
+}
