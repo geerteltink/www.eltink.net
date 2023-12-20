@@ -1,6 +1,6 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Site is created with [Hugo](https://gohugo.io/). Served by [netlify](https://app.netlify.com/sites/eltink-net)",
   "main": "index.js",
   "devDependencies": {
@@ -20,7 +20,7 @@
     "striptags": "^3.2.0",
     "stylelint": "^15.11.0",
     "stylelint-config-recess-order": "^4.4.0",
-    "stylelint-config-recommended": "^13.0.0"
+    "stylelint-config-recommended": "^14.0.0"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
