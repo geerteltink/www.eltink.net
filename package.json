@@ -1,6 +1,6 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Site is created with [Hugo](https://gohugo.io/). Served by [netlify](https://app.netlify.com/sites/eltink-net)",
   "main": "index.js",
   "devDependencies": {
@@ -8,18 +8,18 @@
     "@11ty/eleventy-img": "^3.1.8",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "autoprefixer": "^10.4.17",
-    "cssnano": "^6.0.3",
+    "cssnano": "^6.0.5",
     "fast-glob": "^3.3.2",
     "html-minifier": "^4.0.0",
     "markdownlint": "^0.33.0",
-    "markdownlint-cli": "^0.38.0",
+    "markdownlint-cli": "^0.39.0",
     "md5": "^2.3.0",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^15.1.0",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "striptags": "^3.2.0",
-    "stylelint": "^16.2.0",
-    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-recess-order": "^4.6.0",
     "stylelint-config-recommended": "^14.0.0"
   },
   "scripts": {
