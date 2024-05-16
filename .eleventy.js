@@ -1,6 +1,6 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const Image = require('@11ty/eleventy-img');
-const htmlmin = require('html-minifier');
+const { minify } = require('html-minifier-terser');
 const collections = require('./src/_lib/collections.js');
 const filters = require('./src/_lib/filters.js');
 
@@ -41,10 +41,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (process.env.NODE_ENV === 'production' && outputPath && outputPath.endsWith('.html')) {
-      let minified = htmlmin.minify(content, {
+      let minified = minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
+        minifyJS: true,
       });
       return minified;
     }
