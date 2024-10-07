@@ -1,6 +1,6 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Site is created with [Hugo](https://gohugo.io/). Served by [netlify](https://app.netlify.com/sites/eltink-net)",
   "main": "index.js",
   "devDependencies": {
@@ -12,7 +12,7 @@
     "fast-glob": "^3.3.2",
     "html-minifier-terser": "^7.2.0",
     "markdownlint": "^0.35.0",
-    "markdownlint-cli": "^0.41.0",
+    "markdownlint-cli": "^0.42.0",
     "md5": "^2.3.0",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
