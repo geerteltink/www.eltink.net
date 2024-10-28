@@ -1,7 +1,6 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const Image = require('@11ty/eleventy-img');
 const { minify } = require('html-minifier-terser');
-const collections = require('./src/_lib/collections.js');
 const filters = require('./src/_lib/filters.js');
 
 async function imageShortcode(src, alt, sizes) {
