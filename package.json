@@ -1,6 +1,6 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Site is created with [Hugo](https://gohugo.io/). Served by [netlify](https://app.netlify.com/sites/eltink-net)",
   "main": "index.js",
   "devDependencies": {
@@ -16,7 +16,7 @@
     "md5": "^2.3.0",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
-    "prettier": "^3.4.1",
+    "prettier": "^3.4.2",
     "striptags": "^3.2.0",
     "stylelint": "^16.11.0",
     "stylelint-config-recess-order": "^5.1.1",
