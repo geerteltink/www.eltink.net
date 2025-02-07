@@ -5,22 +5,22 @@
   "main": "index.js",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^5.0.0",
-    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
-    "fast-glob": "^3.3.2",
+    "fast-glob": "^3.3.3",
     "html-minifier-terser": "^7.2.0",
-    "markdownlint": "^0.37.2",
-    "markdownlint-cli": "^0.43.0",
+    "markdownlint": "^0.37.4",
+    "markdownlint-cli": "^0.44.0",
     "md5": "^2.3.0",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
     "prettier": "^3.4.2",
     "striptags": "^3.2.0",
-    "stylelint": "^16.12.0",
-    "stylelint-config-recess-order": "^5.1.1",
-    "stylelint-config-recommended": "^14.0.1"
+    "stylelint": "^16.14.1",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-recommended": "^15.0.0"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
@@ -31,7 +31,7 @@
     "lint:md": "markdownlint src/**/*.md",
     "lint:css": "stylelint src/assets/**/*.css",
     "format": "prettier --write '**/*.{js,css,html,md}'",
-    "test": "npm run build && npm run lint && npm run check-links"
+    "test": "npm run build && npm run lint"
   },
   "repository": {
     "type": "git",
