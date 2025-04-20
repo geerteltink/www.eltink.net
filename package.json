@@ -1,11 +1,11 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "Site is created with eleventy.",
   "main": "index.js",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-img": "^6.0.2",
     "@11ty/eleventy-plugin-rss": "^2.0.3",
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.0.6",
