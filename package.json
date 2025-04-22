@@ -1,6 +1,6 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "Site is created with eleventy.",
   "main": "index.js",
   "devDependencies": {
@@ -20,7 +20,7 @@
     "striptags": "^3.2.0",
     "stylelint": "^16.18.0",
     "stylelint-config-recess-order": "^6.0.0",
-    "stylelint-config-recommended": "^15.0.0"
+    "stylelint-config-recommended": "^16.0.0"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
