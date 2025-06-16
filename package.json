@@ -1,10 +1,10 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "Site is created with eleventy.",
   "main": "index.js",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy": "^3.1.1",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "autoprefixer": "^10.4.21",
@@ -18,8 +18,8 @@
     "postcss-import": "^16.1.0",
     "prettier": "^3.5.3",
     "striptags": "^3.2.0",
-    "stylelint": "^16.19.1",
-    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint": "^16.20.0",
+    "stylelint-config-recess-order": "^6.1.0",
     "stylelint-config-recommended": "^16.0.0"
   },
   "scripts": {
