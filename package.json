@@ -16,12 +16,12 @@
         "md5": "^2.3.0",
         "postcss-cli": "^11.0.1",
         "postcss-import": "^16.1.1",
-        "prettier": "^3.7.4",
+        "prettier": "^3.8.1",
         "striptags": "^3.2.0",
-        "stylelint": "^16.26.1",
-        "stylelint-order": "^7.0.0",
-        "stylelint-config-recess-order": "^7.4.0",
-        "stylelint-config-recommended": "^17.0.0"
+        "stylelint": "^17.0.0",
+        "stylelint-order": "^7.0.1",
+        "stylelint-config-recess-order": "^7.6.0",
+        "stylelint-config-recommended": "^18.0.0"
     },
     "scripts": {
         "build": "npx @11ty/eleventy",
@@ -45,6 +45,6 @@
     },
     "homepage": "https://github.com/geerteltink/www.eltink.net#readme",
     "dependencies": {
-        "lodash": "^4.17.21"
+        "lodash": "^4.17.23"
     }
 }
