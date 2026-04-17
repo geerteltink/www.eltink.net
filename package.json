@@ -1,50 +1,50 @@
 {
-    "name": "www.eltink.net",
-    "version": "1.0.34",
-    "description": "Site is created with eleventy.",
-    "main": "index.js",
-    "devDependencies": {
-        "@11ty/eleventy": "^3.1.5",
-        "@11ty/eleventy-img": "^6.0.4",
-        "@11ty/eleventy-plugin-rss": "^3.0.0",
-        "autoprefixer": "^10.5.0",
-        "cssnano": "^7.1.5",
-        "fast-glob": "^3.3.3",
-        "html-minifier-terser": "^7.2.0",
-        "markdownlint": "^0.40.0",
-        "markdownlint-cli": "^0.48.0",
-        "md5": "^2.3.0",
-        "postcss-cli": "^11.0.1",
-        "postcss-import": "^16.1.1",
-        "prettier": "^3.8.3",
-        "striptags": "^3.2.0",
-        "stylelint": "^17.8.0",
-        "stylelint-order": "^8.1.1",
-        "stylelint-config-recess-order": "^7.7.0",
-        "stylelint-config-recommended": "^18.0.0"
-    },
-    "scripts": {
-        "build": "npx @11ty/eleventy",
-        "build-production": "NODE_ENV=production npx @11ty/eleventy",
-        "serve": "npx @11ty/eleventy --serve --port=8091",
-        "serve-production": "NODE_ENV=production npx @11ty/eleventy --serve --port=8091",
-        "lint": "npm run lint:md && npm run lint:css",
-        "lint:md": "markdownlint src/**/*.md",
-        "lint:css": "stylelint src/assets/**/*.css",
-        "format": "prettier --write '**/*.{js,css,html,md}'",
-        "test": "npm run build && npm run lint"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/geerteltink/www.eltink.net.git"
-    },
-    "author": "",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/geerteltink/www.eltink.net/issues"
-    },
-    "homepage": "https://github.com/geerteltink/www.eltink.net#readme",
-    "dependencies": {
-        "lodash": "^4.18.1"
-    }
+  "name": "www.eltink.net",
+  "version": "1.0.34",
+  "description": "Site is created with eleventy.",
+  "main": "index.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "autoprefixer": "^10.5.0",
+    "cssnano": "^7.1.5",
+    "fast-glob": "^3.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "markdownlint": "^0.40.0",
+    "markdownlint-cli": "^0.48.0",
+    "md5": "^2.3.0",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "prettier": "^3.8.3",
+    "striptags": "^3.2.0",
+    "stylelint": "^17.8.0",
+    "stylelint-order": "^8.1.1",
+    "stylelint-config-recess-order": "^7.7.0",
+    "stylelint-config-recommended": "^18.0.0"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "build-production": "NODE_ENV=production npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve --port=8091",
+    "serve-production": "NODE_ENV=production npx @11ty/eleventy --serve --port=8091",
+    "lint": "npm run lint:md && npm run lint:css",
+    "lint:md": "markdownlint src/**/*.md",
+    "lint:css": "stylelint src/assets/**/*.css",
+    "format": "prettier --write '**/*.{js,css,html,md}'",
+    "test": "npm run build && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geerteltink/www.eltink.net.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geerteltink/www.eltink.net/issues"
+  },
+  "homepage": "https://github.com/geerteltink/www.eltink.net#readme",
+  "dependencies": {
+    "lodash": "^4.18.1"
+  }
 }
