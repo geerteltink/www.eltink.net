@@ -1,8 +1,8 @@
-const path = require('path');
-const generateHash = require('../_lib/generateHash');
+import path from 'path';
+import generateHash from '../_lib/generateHash.js';
 
-const hash = generateHash(path.join(__dirname, '../assets/css/**/*.css'));
+const hash = generateHash(path.join(path.dirname(import.meta.url), '../assets/css/**/*.css'));
 
-module.exports = {
+export default {
   stylesCss: `/assets/css/styles.${hash}.css`,
 };

@@ -1,36 +1,31 @@
-const meta = require('./../_data/meta.json');
-const { DateTime } = require('luxon');
-const striptags = require('striptags');
+import meta from './../_data/meta.js';
+import { DateTime } from 'luxon';
+import striptags from 'striptags';
 
-exports.limit = (array, limit) => {
-  return array.slice(0, limit);
-};
+const limit = (array, limit) => array.slice(0, limit);
 
-exports.readableDate = (dateObj) => {
+const readableDate = (dateObj) => {
   if (!(dateObj instanceof Date)) {
     dateObj = new Date(dateObj);
   }
-
   return DateTime.fromJSDate(dateObj).setLocale(meta.lang).toLocaleString(DateTime.DATE_FULL);
 };
 
-exports.isoDate = (dateObj) => {
+const isoDate = (dateObj) => {
   if (!(dateObj instanceof Date)) {
     dateObj = new Date(dateObj);
   }
-
   return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
 };
 
-exports.isoDateTime = (dateObj) => {
+const isoDateTime = (dateObj) => {
   if (!(dateObj instanceof Date)) {
     dateObj = new Date(dateObj);
   }
-
   return DateTime.fromJSDate(dateObj).toISO();
 };
 
-exports.summary = (data) => {
+const summary = (data) => {
   return striptags(data.replace(/<h1[^>]*>([\s\S]*?)<\/h1[^>]*>/, ''))
     .substring(0, 200)
     .replace(/^\s+|\s+$|\s+(?=\s)/g, '')
@@ -38,8 +33,16 @@ exports.summary = (data) => {
     .concat('...');
 };
 
-exports.getRandom = (collection) => {
+const getRandom = (collection) => {
   const slicedCollection = collection.slice(5);
-
   return slicedCollection.splice(Math.floor(Math.random() * slicedCollection.length), 1)[0];
+};
+
+export default {
+  limit,
+  readableDate,
+  isoDate,
+  isoDateTime,
+  summary,
+  getRandom,
 };

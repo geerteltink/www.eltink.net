@@ -1,22 +1,19 @@
-const meta = require('./meta.json');
-const fs = require('fs');
+import meta from './meta.js';
+import fs from 'fs';
 
-module.exports = {
+export default {
   created: (data) => (data?.inputPath ? fs.statSync(data.inputPath).birthtime : undefined),
   modified: (data) => (data?.inputPath ? fs.statSync(data.inputPath).mtime : undefined),
   summary: (data) => {
     if (data.description) {
       return data.description;
     }
-
     if (data.tags === undefined) {
       return meta.description;
     }
-
     if (!data.tags.includes('post')) {
       return meta.description;
     }
-
     return null;
   },
 };

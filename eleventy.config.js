@@ -1,7 +1,7 @@
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const Image = require('@11ty/eleventy-img');
-const { minify } = require('html-minifier-terser');
-const filters = require('./src/_lib/filters.js');
+import pluginRss from '@11ty/eleventy-plugin-rss';
+import Image from '@11ty/eleventy-img';
+import { minify } from 'html-minifier-terser';
+import filters from './src/_lib/filters.js';
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -23,7 +23,7 @@ async function imageShortcode(src, alt, sizes) {
   });
 }
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   Object.keys(filters).forEach((name) => {
@@ -38,9 +38,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/favicon.png');
 
-  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+  eleventyConfig.addTransform('htmlmin', async function (content, outputPath) {
     if (process.env.NODE_ENV === 'production' && outputPath && outputPath.endsWith('.html')) {
-      let minified = minify(content, {
+      let minified = await minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
@@ -48,7 +48,6 @@ module.exports = function (eleventyConfig) {
       });
       return minified;
     }
-
     return content;
   });
 
@@ -65,4 +64,4 @@ module.exports = function (eleventyConfig) {
     //htmlTemplateEngine: 'liquid',
     //dataTemplateEngine: false
   };
-};
+}

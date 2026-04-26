@@ -1,10 +1,12 @@
-const fs = require('fs');
-const path = require('path');
-const postcss = require('postcss');
-const generateHash = require('../_lib/generateHash');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import postcss from 'postcss';
+import generateHash from '../_lib/generateHash.js';
 
-module.exports = class {
+export default class {
   async data() {
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
     const rawFilepath = path.join(__dirname, '../assets/css/styles.css');
     const hash = generateHash(path.join(__dirname, '../assets/css/**/*.css'));
 
@@ -17,8 +19,10 @@ module.exports = class {
   }
 
   async render({ rawCss, rawFilepath }) {
-    return await postcss([require('postcss-import'), require('cssnano')])
+    const postcssImport = (await import('postcss-import')).default;
+    const cssnano = (await import('cssnano')).default;
+    return await postcss([postcssImport, cssnano])
       .process(rawCss, { from: rawFilepath })
       .then((result) => result.css);
   }
-};
+}
