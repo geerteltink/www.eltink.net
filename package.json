@@ -5,7 +5,7 @@
   "main": "eleventy.config.js",
   "type": "module",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "autoprefixer": "^10.5.0",
@@ -17,9 +17,9 @@
     "md5": "^2.3.0",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
-    "prettier": "^3.8.3",
+    "prettier": "^3.8.4",
     "striptags": "^3.2.0",
-    "stylelint": "^17.11.1",
+    "stylelint": "^17.13.0",
     "stylelint-order": "^8.1.1",
     "stylelint-config-recess-order": "^7.7.0",
     "stylelint-config-recommended": "^18.0.0"
