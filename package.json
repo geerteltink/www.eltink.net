@@ -1,6 +1,6 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "description": "Site is created with eleventy.",
   "main": "eleventy.config.js",
   "type": "module",
@@ -9,7 +9,7 @@
     "@11ty/eleventy-img": "^7.0.0",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "autoprefixer": "^10.6.1",
-    "cssnano": "^9.0.4",
+    "cssnano": "^9.0.5",
     "fast-glob": "^3.3.3",
     "html-minifier-terser": "^7.2.0",
     "markdownlint": "^0.41.1",
