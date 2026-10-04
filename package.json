@@ -1,6 +1,6 @@
 {
   "name": "www.eltink.net",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "description": "Site is created with eleventy.",
   "main": "eleventy.config.js",
   "type": "module",
@@ -19,7 +19,7 @@
     "postcss-import": "^17.0.0",
     "prettier": "^3.9.9",
     "striptags": "^3.2.0",
-    "stylelint": "^17.15.0",
+    "stylelint": "^17.16.0",
     "stylelint-order": "^8.1.1",
     "stylelint-config-recess-order": "^7.8.0",
     "stylelint-config-recommended": "^18.0.0"
